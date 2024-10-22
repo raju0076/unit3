@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>masaiNavbar</title>
+    <style>
+        #container{
+            width: 100%;
+            height: 50px;
+         
+        }
+        #navbar{
+            width: 100%;
+            height: 100%;
+            display:flex;
+           
+            border-left: 1px solid black;
+            border-right: 3px solid black;
+            border-bottom: 3px solid black;
+            border-top: 1px solid black;  
+        }
+        #navbar>div:nth-child(1){
+            width: 18%;
+            height: 100%;
+           
+            text-align: end;
+            
+            
+        }
+        img[alt="masai"]{
+            width: 80px;
+            height: 40px;
+            margin-top: 4px;
+            
+        }
+        #navbar>div:nth-child(2){
+            width: 50%;
+            height: 100%;
+            
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 2px;
+            margin-left: 20px;
+            
+        }
+        label{
+            font-size: 12px;
+            
+            
+        }
+        select[id="course"]{
+            border: 0px;
+            margin-left:-50px;
+        }
+        h6{
+            margin-left: 0;
+            color: rgb(90, 80, 80);
+        }
+        #navbar>div:nth-child(3){
+            width: 20%;
+            height: 100%;
+           
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        button:nth-child(1){
+            color: blueviolet;
+            padding-bottom: 10px;
+            border: 0px;
+
+        }
+        button:nth-child(2){
+            color: rgb(226, 55, 43);
+            padding: 12px;
+            border: 1px solid rgb(226, 55, 43);
+            border-radius: 5px;
+            background-color:white;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="navbar">
+            <div>
+                <img src="https://cdn.masaischool.com/masai-website/Masai_Logo_dark_web_b21aab8c62.webp" alt="masai">
+            </div>
+            <div>
+                <span><label for="course">COURSES</label></span>
+                <select name="course" id="course"></select>
+                <h6>FEES & ISA</h6>
+                <h6>ABOUT US</h6>
+                <h6>HIRE FROM US</h6>
+                <h6>FAQ</h6>
+                <h6>EVENTS</h6>
+            </div>
+            <div>
+                <button>
+                    REFER & EARN
+                    <img src="https://c8.alamy.com/comp/RG5NF3/hand-giving-love-symbol-hand-holding-heart-shape-vector-icon-isolated-vector-illustration-RG5NF3.jpg" alt="Icon" style="width: 30px; height: 20px; margin-top: 5px;">
+                  </button>
+                
+                <button>LOGIN</button>
+                  
+                  
+            </div>
+        </div>
+    </div>
+</body>
+</html>
